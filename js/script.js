@@ -77,29 +77,34 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log("Immagine: " + teamMembers[i].img);
 }
 
-// milestone 2
+// bonus 1 e 2
 
 const teamMembersEl = document.getElementById("our_team");
-
-const teamNameEl = document.getElementById("name");
-const teamRoleEl = document.getElementById("role");
-const teamImgEl = document.getElementById("img");
 
 
 
 for (let i = 0; i < teamMembers.length; i++) {
- 
-    const name = document.createElement("li");
-    name.innerHTML = `${teamMembers[i].name}`;
-    teamNameEl.append(name);
     
-    const role = document.createElement("li");
-    role.innerHTML = `${teamMembers[i].role}`;
-    teamRoleEl.append(role);
+    // elemento carta
+    const memberCard = document.createElement("div");
+    memberCard.classList.add("member_card");
+    teamMembersEl.append(memberCard);
 
-    const img = document.createElement("li");
-    img.innerText = teamMembers[i].img;
-    teamImgEl.append(img);
+    // immagine
+    const img = document.createElement("img");
+    img.src = "img/" + teamMembers[i].img;
+    memberCard.append(img);
+    
+    // nome
+    const name = document.createElement("div");
+    name.innerHTML = `${teamMembers[i].name}`;
+    name.classList.add("name");
+    memberCard.append(name);
+    
+    // ruolo
+    const role = document.createElement("div");
+    role.innerHTML = `${teamMembers[i].role}`;
+    memberCard.append(role);
 }
 
 

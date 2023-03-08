@@ -13,24 +13,32 @@ h1{
     padding: 1rem;
 }
 
-ul{
-    list-style: none;
-    padding: 1rem;
 
-    background-color: black;
-    color: lightgray;
-    border: gray 1px solid;
+
+h1{
+    padding: 3rem;
 }
 
-ul li{
-    margin: 1rem 0;
-    padding: 0.7rem 0.2rem;
-    border-bottom: 1px solid gray;
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #our_team{
-    max-width: 1200px;
+    padding: 2rem 0;
     display: flex;
-    margin: 1rem auto;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.member_card{
+    width: calc(100% / 3 - 4rem);
+    padding: 2rem 0;
+}
+
+.name{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
 }
