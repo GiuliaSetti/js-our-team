@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug *{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+    padding: 1rem;
+
+    background-color: black;
+    color: lightgray;
+    border: gray 1px solid;
+}
+
+ul li{
+    margin: 1rem 0;
+    padding: 0.7rem 0.2rem;
+    border-bottom: 1px solid gray;
+}
+
+#our_team{
+    max-width: 1200px;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}

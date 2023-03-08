@@ -76,3 +76,31 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log("Ruolo nell'azienda: " + teamMembers[i].role);
     console.log("Immagine: " + teamMembers[i].img);
 }
+
+// milestone 2
+
+const teamMembersEl = document.getElementById("our_team");
+
+const teamNameEl = document.getElementById("name");
+const teamRoleEl = document.getElementById("role");
+const teamImgEl = document.getElementById("img");
+
+
+
+for (let i = 0; i < teamMembers.length; i++) {
+ 
+    const name = document.createElement("li");
+    name.innerHTML = `${teamMembers[i].name}`;
+    teamNameEl.append(name);
+    
+    const role = document.createElement("li");
+    role.innerHTML = `${teamMembers[i].role}`;
+    teamRoleEl.append(role);
+
+    const img = document.createElement("li");
+    img.innerText = teamMembers[i].img;
+    teamImgEl.append(img);
+}
+
+
+
