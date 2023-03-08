@@ -63,3 +63,16 @@ const teamMembers = [
 ];
 
 //  /milestone 0 
+
+// milestone 1 - stampa in console
+
+// test
+// console.log (teamMembers[0].name);
+// console.log (teamMembers[0].role);
+// console.log (teamMembers[0].img);
+
+for (let i = 0; i < teamMembers.length; i++) {
+    console.log(teamMembers[i].name);
+    console.log(teamMembers[i].role);
+    console.log(teamMembers[i].img);
+}
