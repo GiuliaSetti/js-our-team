@@ -72,7 +72,7 @@ const teamMembers = [
 // console.log (teamMembers[0].img);
 
 for (let i = 0; i < teamMembers.length; i++) {
-    console.log(teamMembers[i].name);
-    console.log(teamMembers[i].role);
-    console.log(teamMembers[i].img);
+    console.log("Nome e Cognome: "+ teamMembers[i].name);
+    console.log("Ruolo nell'azienda: " + teamMembers[i].role);
+    console.log("Immagine: " + teamMembers[i].img);
 }
