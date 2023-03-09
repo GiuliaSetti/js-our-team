@@ -75,45 +75,41 @@ const teamMembersEl = document.getElementById("our_team");
 
 for (let i = 0; i < teamMembers.length; i++) {
 
-    let newEl = document.createElement("li");
-    teamMembersEl.append(newEl);
 
     let currentMember = teamMembers[i];
 
     for(let ourTeam in currentMember){
 
-        newEl.innerHTML += `${ourTeam}: ${currentMember[ourTeam]}<br>`;
+        console.log(ourTeam + ": " + currentMember[ourTeam]);
     }
     
 }
 
 // bonus 1 e 2
 
-
-
-// for (let i = 0; i < teamMembers.length; i++) {
+for (let i = 0; i < teamMembers.length; i++) {
     
-//     // elemento carta
-//     const memberCard = document.createElement("div");
-//     memberCard.classList.add("member_card");
-//     teamMembersEl.append(memberCard);
+    // elemento carta
+    const memberCard = document.createElement("div");
+    memberCard.classList.add("member_card");
+    teamMembersEl.append(memberCard);
 
-//     // immagine
-//     const img = document.createElement("img");
-//     img.src = "img/" + teamMembers[i].img;
-//     memberCard.append(img);
+    // immagine
+    const img = document.createElement("img");
+    img.src = "img/" + teamMembers[i].img;
+    memberCard.append(img);
     
-//     // nome
-//     const name = document.createElement("div");
-//     name.innerHTML = `${teamMembers[i].name}`;
-//     name.classList.add("name");
-//     memberCard.append(name);
+    // nome
+    const name = document.createElement("div");
+    name.innerHTML = `${teamMembers[i].name}`;
+    name.classList.add("name");
+    memberCard.append(name);
     
-//     // ruolo
-//     const role = document.createElement("div");
-//     role.innerHTML = `${teamMembers[i].role}`;
-//     memberCard.append(role);
-// }
+    // ruolo
+    const role = document.createElement("div");
+    role.innerHTML = `${teamMembers[i].role}`;
+    memberCard.append(role);
+}
 
 
 

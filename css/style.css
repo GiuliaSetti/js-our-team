@@ -9,15 +9,9 @@
 }
 
 h1{
-    text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-
-
-h1{
-    padding: 3rem;
-}
 
 .container{
     max-width: 1300px;
@@ -27,13 +21,13 @@ h1{
 
 #our_team{
     padding: 2rem 0;
-    /* display: flex;
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; */
+    gap: 20px;
 }
 
 .member_card{
-    width: calc(100% / 3 - 4rem);
+    width: calc(100% / 3 - (20 / 3 * 2));
     padding: 2rem 0;
 }
 
