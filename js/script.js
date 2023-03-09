@@ -72,9 +72,14 @@ const teamMembers = [
 // console.log (teamMembers[0].img);
 
 for (let i = 0; i < teamMembers.length; i++) {
-    console.log("Nome e Cognome: "+ teamMembers[i].name);
-    console.log("Ruolo nell'azienda: " + teamMembers[i].role);
-    console.log("Immagine: " + teamMembers[i].img);
+
+    let currentMember = teamMembers[i];
+
+    for(let ourTeam in currentMember){
+
+        console.log(ourTeam + ": " + currentMember[ourTeam]);
+    }
+    
 }
 
 // bonus 1 e 2
